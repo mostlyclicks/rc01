@@ -1,1 +1,26 @@
 /* custom styles */
+@import 'variables.css.scss';
+
+body {
+  background-color:#d32a2c;
+}
+
+#header {
+  color:#fff;
+  min-height:200px;
+  a {
+    color:#fff;
+  }
+  padding:30px 0 30px;
+  background-image:url(bikers-DSC_0546.jpg);
+  background-size:cover;
+  background-position-x:50%;
+  background-position-y:50%;
+  border:1px solid yellow;
+  #header-wrapper {
+    background-color:$rideco-red;
+    padding:10px 0;
+    margin-top:16px;
+  }
+
+}

@@ -8,6 +8,13 @@
   body {
     border:3px solid red;
   }
+  #header {
+    background-position-y:10%;
+    min-height:400px;
+    #header-wrapper {
+      margin-top:250px;
+    }
+  }
 
 }
 
@@ -16,11 +23,21 @@
   body {
     border:3px solid blue;
   }
+
+  #header {
+    background-position-y:20%;
+
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   body {
     border:3px solid yellow;
+  }
+
+  #header {
+
+    background-position-y:22%;
   }
 }
