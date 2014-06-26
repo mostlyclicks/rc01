@@ -1,3 +1,9 @@
+PATH
+  remote: vendor/extensions
+  specs:
+    refinerycms-brands (1.0)
+      refinerycms-core (~> 2.1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -161,6 +167,10 @@ GEM
     refinerycms-images (2.1.1)
       dragonfly (~> 0.9.14)
       refinerycms-core (= 2.1.1)
+    refinerycms-news (2.1.2)
+      friendly_id (~> 4.0.9)
+      refinerycms-core (~> 2.1.1)
+      refinerycms-settings (~> 2.1.0)
     refinerycms-pages (2.1.1)
       awesome_nested_set (~> 2.1.3)
       babosa (!= 0.3.6)
@@ -172,6 +182,8 @@ GEM
       acts_as_indexed (~> 0.8.0)
       dragonfly (~> 0.9.12)
       refinerycms-core (= 2.1.1)
+    refinerycms-settings (2.1.1)
+      refinerycms-core (~> 2.1.1)
     routing-filter (0.3.1)
       actionpack
     sass (3.3.2)
@@ -213,5 +225,7 @@ DEPENDENCIES
   rails_12factor
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
+  refinerycms-brands!
+  refinerycms-news (~> 2.1.0)
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)

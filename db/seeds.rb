@@ -8,3 +8,9 @@
 
 # Added by Refinery CMS Pages extension
 Refinery::Pages::Engine.load_seed
+
+# Added by Refinery CMS Brands extension
+Refinery::Brands::Engine.load_seed
+
+# Added by Refinery CMS News engine
+Refinery::News::Engine.load_seed
