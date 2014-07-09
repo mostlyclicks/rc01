@@ -5,22 +5,39 @@ body {
   background-color:#d32a2c;
 }
 
-#header {
+#header-wrapper {
   color:#fff;
-  min-height:200px;
+  //min-height:200px;
   a {
     color:#fff;
   }
-  padding:30px 0 30px;
-  background-image:url(bikers-DSC_0546.jpg);
+  background: url(BHSpin-sized.png) 50% 0%; 
+  position: relative; 
+  padding: 200px 0;
   background-size:cover;
-  background-position-x:50%;
-  background-position-y:50%;
-  border:1px solid yellow;
-  #header-wrapper {
-    background-color:$rideco-red;
-    padding:10px 0;
-    margin-top:16px;
-  }
+  background-repeat:no-repeat;
+}
 
+#statement {
+  padding:70px 0;
+  .lead {
+    font-size:22px;
+    color:#fff;
+    font-weight:100;
+    letter-spacing: .05em;
+  }
+}
+
+#brands {
+  padding:100px 0;
+  box-shadow:inset 1px 1px 10px rgba(0,0,0,.1);
+}
+
+#trail-advocacy {
+  background: url(bikers-DSC_0546.jpg) 50% 0; 
+  margin: 0 auto; 
+  position: relative; 
+  padding: 200px 0;
+  background-size:cover;
+  background-repeat:no-repeat;
 }
