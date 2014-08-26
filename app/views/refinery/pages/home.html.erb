@@ -6,11 +6,20 @@
 
 <%= render "/refinery/header" -%>
 
+<!-- <div id="navigation">
+<ul class="nav nav-pills affix">
+<li><a href="#rideco">What is TheRideCo</a></li>  
+<li><a href="#brands">Brands</a></li>
+<li><a href="#trail-advocacy">Trail advocacy</a></li>
+</ul>
+
+</div> -->
+
 <section id="statement">
-<div class="container"><div class="row"><div class="col-md-8 col-md-offset-2"><p class="lead">“TheRideCo?”  What is TheRideCo you might be asking your self?  It’s what ever you want it to be that includes cycling.  Riding on your own, with a group, gear, bikes, clothing, trails, trail building, and advocacy.  TheRideCo isn’t about one group of cyclists, it’s about all cycling company.</p></div></div></div>
+<div class="container" id="rideco"><div class="row"><div class="col-md-8 col-md-offset-2"><p class="lead">“TheRideCo?”  What is TheRideCo you might be asking your self?  It’s what ever you want it to be that includes cycling.  Riding on your own, with a group, gear, bikes, clothing, trails, trail building, and advocacy.  TheRideCo isn’t about one group of cyclists, it’s about all cycling company.</p></div></div></div>
 </section>
 
-<section id="brands" style="background-color:#fff;">
+<section id="brands" name="brands" style="background-color:#fff;">
 <div class="container">
   <div class="row">
     <div class="col-md-12">
@@ -34,14 +43,9 @@
                   <%= image_tag brand.logo_image.url, class: 'img-responsive' %>
                   <%#= image_tag brand.main_image.url %>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-6" style="background-color:rgba(255,255,255,.7);">
                   <h1><%= brand.name %></h1>
-                  <p style="background-color:rgba(255,255,255,.7);">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <%= raw brand.intro_text %>
                 </div>
 
               </div>
@@ -74,22 +78,45 @@
 </section>
 
 
-<section id="trail-advocacy" data-speed="4" data-type="background">
+<section id="trail-advocacy" name="trail-advocacy" data-speed="4" data-type="background">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <p class="lead">This is where you put something about trail advocacy.</p>
-
-
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Bike and Trail Advocacy</h1>
+        <p class="lead">Building communities that support and cultivate cycling.</p>
+        <p>Over 14 years of experience planning and building trails, training and advising trail builders and communities, and planning and coordinating cycling and trail events.</p>
+        <div class="col-md-6">
+          <ul>
+          <li>Certified Trail Master via http://www.traildesign.com</li>
+          <li>COO of human powered trails from 2000 to 2008.  Responsible for, planing, design, volunteer recruitmentli implementation.</p>
+          <li>Design/buils on several IMBA courses from pump track to Fat Bikes</li>
+        </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+          <li>Closely involved with KORC from 2011-present.  Trail design and implementation. Active in trail design and building for all seasons.</li>
+<li>Race director for La Crosse Criterium and TT 2010, 2011, 2012. </li> 
+<li>Race director for the MNMBS Border Battle 2012, 2013, 2014.  Voted Race of the Year in 2013.</li>
+</ul>
+        </div>
       </div>
-
     </div>
+
+
+<!--       <div class="row">
+        <div class="col-md-4 text-center" style="border:1px solid red;">adfad</div>
+        <div class="col-md-4 text-center" style="border:1px solid red;">adfad</div>
+        <div class="col-md-4 text-center" style="border:1px solid red;">adfad</div>
+      </div> -->
+
 
 
   </div>
 
 
 </section>
+
+
 
 
 

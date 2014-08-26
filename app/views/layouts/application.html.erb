@@ -3,8 +3,16 @@
   <% site_bar = render('/refinery/site_bar', :head => true) -%>
   <head>
     <%= render "/refinery/head" %>
+
+
+
   </head>
-  <body id="<%= canonical_id @page %>">
+
+  <body id="<%= canonical_id @page %>" data-spy="scroll" data-target="#navigation">
+
+   
+
+
     <%= site_bar -%>
 
     <div id="page_container">
@@ -22,5 +30,24 @@
       </footer>
     </div>
     <%= render "/refinery/javascripts" %>
+     <script>
+$(function() {
+  $('a[href*=#]:not([href=#]):not(.carousel-control)').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+
+
+    </script>
   </body>
 </html>

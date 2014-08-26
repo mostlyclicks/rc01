@@ -1,6 +1,8 @@
 /* custom styles */
 @import 'variables.css.scss';
 
+
+
 body {
   background-color:#d32a2c;
 }
@@ -11,17 +13,41 @@ body {
   a {
     color:#fff;
   }
-  background: url(BHSpin-sized.png) 50% 0%; 
+  //background: url(BHSpin-sized.png) 50% 0%; 
   position: relative; 
   padding: 200px 0;
-  background-size:cover;
-  background-repeat:no-repeat;
+  //background-size:cover;
+  //background-repeat:no-repeat;
+  height:100%;
+  background-color:blue;
+}
+
+#navigation {
+  position:relative;
+  z-index:3000;
+  height:50px;
+  background-color:black;
+  //background-color:rgba(0,0,0,.7);
+  line-height:50px;
+  text-align:center;
+  -webkit-transform: translateZ(33000);
+  a {
+    text-transform: uppercase;
+    color:rgba(255,255,255,.8);
+    padding:0 1em;
+  }
+  color:#fff;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background:none;
 }
 
 #statement {
-  padding:70px 0;
+  padding:250px 0;
   .lead {
-    font-size:22px;
+    font-size:36px;
     color:#fff;
     font-weight:100;
     letter-spacing: .05em;
@@ -34,10 +60,27 @@ body {
 }
 
 #trail-advocacy {
-  background: url(bikers-DSC_0546.jpg) 50% 0; 
+
+  background: url(trail-tall.jpg) 50% 0; 
   margin: 0 auto; 
   position: relative; 
-  padding: 200px 0;
+  padding: 100px 0 100px 0px;
   background-size:cover;
   background-repeat:no-repeat;
+  color:rgba(255,255,255,.8);
+  .col-md-8 {
+    background-color:rgba(0,0,0,.7);
+    padding:20px;
+    h1 {
+      margin-top:0px;
+    }
+  }
+  .lead {
+    color:#fff;
+    font-weight:100;
+    font-size:32px;
+  }
+  li {
+    margin-bottom:2em;
+  }
 }
