@@ -5,6 +5,7 @@
 
 body {
   background-color:#d32a2c;
+  position:relative;
 }
 
 #header-wrapper {
@@ -23,8 +24,8 @@ body {
 }
 
 #navigation {
-  position:relative;
-  z-index:3000;
+  position:fixed;
+  z-index:33000;
   height:50px;
   background-color:black;
   //background-color:rgba(0,0,0,.7);
